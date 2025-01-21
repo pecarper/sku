@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <title>Sku</title>
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="encabezado">
+                <ul class="encabezado__menu">
+                    <li class="encabezado__item">              
+                        <input type="search" placeholder="Buscar" id="buscar" class="encabezado__item--entrada" data-busqueda>
+                        <button class="encabezado__item--buscar" data-boton-busqueda></button>
+                    </li>
+                    <li class="encabezado__item">
+                        <a href="./index.html">
+                            <img src="./img/encabezado/logo.png" alt="Logo de Sku" class="encabezado__item--logo">
+                        </a>
+                    </li>
+                    <li class="encabezado__item">
+                        <a href="./pages/enviar-video.html">
+                            <img src="./img/encabezado/subir.png" alt="Registrar producto" class="encabezado__item--subir">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <ul class="video__contenedor" alt="Artículos de Sku" data-lista></ul>
+        </main>
+        <script src="./js/mostrarVideos.js" type="module"></script>
+        <script src="./js/filtrarVideo.js" type="module"></script>
+        <script src="../js/eliminarProducto.js" type="module"></script>
+    </body>
+</html>
