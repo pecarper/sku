@@ -15,11 +15,9 @@ async function filtrarVideo(evento) {
 
     busqueda.forEach(video => lista.appendChild(crearCard(video.titulo, video.descripcion, video.url, video.imagen)));
     
-    if (busqueda.lenght == 0) {
+    if (busqueda.length == 0) {
         lista.innerHTML = `<h2 class="mensaje_titulo">No fueron encontrados elementos para ${datosBusqueda}</h2>`;
     }
-    
-    //console.log(busqueda);
 }
 
 const boton = document.querySelector("[data-boton-busqueda]");
